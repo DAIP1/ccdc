@@ -26,7 +26,6 @@ class Membership(Document):
 				frappe.throw(_("Please select a Member"))
 
 		self.validate_membership_period()
-		
 
 	def create_member_from_website_user(self):
 		member_name = frappe.get_value("Member", dict(email_id=frappe.session.user))
@@ -407,3 +406,10 @@ def get_plan_from_razorpay_id(plan_id):
 		return None
 
 
+def set_expired_status():
+	frappe.db.sql("""
+		UPDATE
+			`tabMembership` SET `membership_status` = 'Expired'
+		WHERE
+			`membership_status` not in ('Cancelled') AND `to_date` < %s
+		""", (nowdate()))
