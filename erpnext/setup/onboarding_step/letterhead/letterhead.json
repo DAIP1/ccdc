@@ -1,0 +1,21 @@
+{
+ "action": "Create Entry",
+ "action_label": "Let\u2019s setup your first Letter Head",
+ "creation": "2022-02-10 13:22:40.793199",
+ "description": "# Create a Letter Head\n\nA Letter Head contains your organization's name, logo, address, etc which appears at the header and footer portion in documents. You can learn more about Setting up Letter Head in ERPNext here.\n",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2022-04-12 11:06:45.370259",
+ "modified_by": "Administrator",
+ "name": "Letterhead",
+ "owner": "Administrator",
+ "reference_document": "Letter Head",
+ "show_form_tour": 1,
+ "show_full_form": 1,
+ "title": "Setup Your Letterhead",
+ "validate_action": 1
+}
